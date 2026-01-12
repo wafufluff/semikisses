@@ -216,7 +216,8 @@ body {
 }
 
 .searchbar input:active {
-  box-shadow: 0 0 6px 2px rgba(156, 220, 186, 0.6); 
+    box-shadow: 0 0 6px 2px rgba(156, 220, 186, 0.6); 
+    box-sizing: border-box;
 }
 
 .searchbar i {
@@ -259,7 +260,8 @@ body {
 }
 
 .productscontainer.searching {
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .productscontainer {
@@ -269,7 +271,7 @@ body {
     align-items: flex-start;
     align-content: flex-start;
     gap: 40px; 
-    width: 100%;
+    width: fit-content;
     max-width: 900px;
     margin: 0 auto;
     min-height: 100vh;
@@ -360,6 +362,102 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+@media (max-width: 420px) {
+    .topcontainer {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .profilepic {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid white;
+    }
+
+    .profilename {
+        font-size: 1.1rem;
+    }
+
+    .email {
+        margin-right: 5px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .navigationcontainer {
+        display: flex;
+        padding: 0 30px;
+        align-items: center;
+        justify-content: center;
+        max-width: 420px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        gap: 20px;
+    }
+    
+    .navigation li a {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .productscontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+
+    .productscontainer.searching {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .product {
+        flex: 0 0 auto;
+        width: 130px;
+        height: 175px;
+    }
+
+    .thumbnail {
+        width: 130px;
+        height: 130px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .productinfo {
+        padding-top: 6px;
+    }
+
+    .producttitle {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .noresults {
+        font-size: 1rem;
+    }
+
+    .searchbar {
+        max-width: 92%;
+    }
+
+    .price {
+        bottom: 5px;
+        right: 5px;
+        padding: 4px 6px;
+        font-size: 0.7rem;
+    }
+
+}
+
 </style>
 </head>
 <body>
