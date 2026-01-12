@@ -359,98 +359,30 @@ body {
 }
 
 @media (max-width: 768px) {
-    body {
-        font-size: 14px;
-        padding: 0 5px;
-    }
-
-    .profilepic {
-        width: 70px;
-        height: 70px;
-    }
-
-    .profilename {
-        font-size: 1.2rem;
-    }
-
-    .email {
-        padding: 10px 25px;
-        font-size: 0.9rem;
-    }
-
     .shopgrid {
-        flex-direction: column;
-        gap: 12px;
+        grid-template-columns: 1fr;
     }
-
-    .shopitem {
-        padding: 6px;
-        gap: 6px;
-    }
-
-    .shopitem .thumbnail {
-        width: 60px;
-        height: 60px;
-    }
-
     .pagelayoutbox {
         flex-direction: column;
-        gap: 0;
-        max-width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
     }
-
     .aboutbox {
         width: 100%;
         align-self: stretch;
         flex: 1 1 100%;
-        margin: 0;
+        position: static;
         order: -1;
-        max-width: 100%;
-        padding: 15px 5px;
-        border-radius: 8px;
+        box-sizing: border-box;
+        margin: 0;
     }
-
     .contentbox {
         flex: 1 1 100%;
         min-height: auto;
-        max-width: 100%;
-        padding: 15px 5px;
-        border-radius: 8px;
     }
-
     .aboutme, .contenttext {
         max-width: 100%;
     }
-
-    .navigationcontainer {
-        max-width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .navigation {
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .navigation li a {
-        font-size: 0.9rem;
-        padding: 6px 2px;
-    }
-
-    .topinner {
-        max-width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .contentarea {
-        padding: 10px 5px;
-    }
 }
+
 </style>
 </head>
 <body>
@@ -496,10 +428,13 @@ body {
      <p>Hello! I’m Semi! And I’m currently obsessed with drawing chibis and making jewelry.</p>
      <br>
      <p>The type of jewelry that I am working on are usually bracelets which are made out of glass beads and stainless materials. Feel free to contact me if you want to create a character inspired design.</p>
+     <p></p>
+     <p></p>
         <div class="socials">
          <a href="https://x.com/semikisses" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
          <a href="https://www.instagram.com/semikisses_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
          <a href="mailto:semikisses@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+         <a></a>
         </div>
     </div>
 </div>
@@ -516,6 +451,7 @@ body {
         </div>
         <div class="iteminfo">
             <span class="title">Sylus Inspired Bracelet</span>
+            <span class="sold"></span>
         </div>
         <div class="price">300 PHP</div>
     </div>
@@ -528,6 +464,7 @@ body {
         </div>
         <div class="iteminfo">
             <span class="title">Xavier Inspired Bracelet</span>
+            <span class="sold"></span>
         </div>
         <div class="price">300 PHP</div>
     </div>
@@ -540,6 +477,7 @@ body {
         </div>
         <div class="iteminfo">
             <span class="title">Rafayel Inspired Bracelet</span>
+            <span class="sold"></span>
         </div>
         <div class="price">300 PHP</div>
     </div>
@@ -552,6 +490,7 @@ body {
         </div>
         <div class="iteminfo">
             <span class="title">Zayne Inspired Bracelet</span>
+            <span class="sold"></span>
         </div>
         <div class="price">300 PHP</div>
     </div>
@@ -564,14 +503,15 @@ body {
         </div>
         <div class="iteminfo">
             <span class="title">Caleb Inspired Bracelet</span>
+            <span class="sold"></span>
         </div>
         <div class="price">300 PHP</div>
     </div>
     </a>
-
 </div>
+            </div>
+        </div>
     </div>
-</div>
 </div>
 </body>
 </html>
