@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
-/* Desktop only overflow */
 @media (min-width: 769px) {
   html {
     overflow-y: scroll;
@@ -361,11 +360,10 @@ body {
     width: 100%;
 }
 
-/* MOBILE STYLES */
 @media (max-width: 768px) {
-
     body {
-        font-size: 14px; /* smaller base font */
+        font-size: 14px;
+        padding: 0 5px;
     }
 
     .profilepic {
@@ -393,12 +391,16 @@ body {
     }
 
     .shopitem .thumbnail {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
 
     .pagelayoutbox {
         flex-direction: column;
+        gap: 0;
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .aboutbox {
@@ -407,15 +409,48 @@ body {
         flex: 1 1 100%;
         margin: 0;
         order: -1;
+        max-width: 100%;
+        padding: 15px 5px;
+        border-radius: 8px;
     }
 
     .contentbox {
         flex: 1 1 100%;
         min-height: auto;
+        max-width: 100%;
+        padding: 15px 5px;
+        border-radius: 8px;
     }
 
     .aboutme, .contenttext {
         max-width: 100%;
+    }
+
+    .navigationcontainer {
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .navigation {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .navigation li a {
+        font-size: 0.9rem;
+        padding: 6px 2px;
+    }
+
+    .topinner {
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .contentarea {
+        padding: 10px 5px;
     }
 }
 </style>
